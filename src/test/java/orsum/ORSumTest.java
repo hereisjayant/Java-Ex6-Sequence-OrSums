@@ -80,10 +80,7 @@ public class ORSumTest {
         assertEquals(answer, TargetORSum.isPossible(input, target));
     }
 
-    @Test
-    public void test2() {
-        assertEquals (1, TargetORSum.getBit(4,2));
-    }
+
 
 
     }

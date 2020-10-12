@@ -22,17 +22,39 @@ public class TargetORSum {
             inArr.add(i);
         }
         Collections.sort(inArr);
+        int new_target = 0;
 
-        char[] target_bin = Integer.toBinaryString(target).toCharArray();
+        for (int i : inArr) {
+            if (i <= target) {
+                boolean orToTarget = true;
+                for (int j = 0; j < noOfBits(i); j++) {
+                    if ((getBit(i, j)==1) && (getBit(target, j) == 0)) {
+                        orToTarget = false;
+                        break;
+                    }
+                }
+                if (orToTarget) {
+                    new_target = new_target | i;
+                }
+            }
 
-        for(int i: inArr){
-            
         }
 
-        return false; // change this
+
+        return target == new_target; // change this
     }
+
     public static int getBit(int num, int pos) {
         return (num >> pos) & 1;
+    }
+
+    public static int noOfBits(int val) {
+        int count = 0;
+        while (val > 0) {
+            count++;
+            val = val >> 1;
+        }
+        return count;
     }
 
 }
