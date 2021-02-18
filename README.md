@@ -1,10 +1,3 @@
-**CPEN 221 / Fall 2020 / Exercise 6**
-
----
-
-This exercise consists of two tasks.
-
----
 
 ## 1. Sequences
 
@@ -62,10 +55,6 @@ For the given problem, here are two examples:
 2. `intArray = {1, 4, 8}` and `target = 7` is not possible.
 
 **Hint**: It is possible to solve this problem without examining every subset of `intArray`. You are not required to solve the problem in any particular fashion but this hint may guide some of you.
-
-## Submitting Your Work
-
-You will submit your work by making changes, committing your work and pushing to GitHub. You must get comfortable with the basic workflow using Git and GitHub. Not being able to push your work to GitHub is not a reasonable excuse for late submissions.
 
 ## JUnit Testing
 
